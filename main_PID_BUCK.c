@@ -105,8 +105,8 @@ int ADC_Read(int channel)
 
     /* Channel 0 is selected i.e.(CHS3CHS2CHS1CHS0=0000) & ADC is disabled */
     ADCON0 =(ADCON0 & 0b11000011)|((channel<<2) & 0b00111100);  
-    ADCON2bits.ACQT = 0b111; //  Tiempo de Adquisición 20Tad.
-    ADCON2bits.ADCS = 0b110; //  Tiempo de Conversión Fosc/64.
+    ADCON2bits.ACQT = 0b111; //  Tiempo de Adquisiciï¿½n 20Tad.
+    ADCON2bits.ADCS = 0b110; //  Tiempo de Conversiï¿½n Fosc/64.
     ADCON0 |= ((1<<ADON)|(1<<GO));	/*Enable ADC and start conversion*/
 
     /* Wait for End of conversion i.e. Go/done'=0 conversion completed */
@@ -161,11 +161,9 @@ void main()
         Derivativo = (Error - Error_0) * Kd / T;
         Error_0 = Error;
 
-        //if (abs(Error) > MaxIntegralError){
-        //   Integral = 0;
-       // }
+      
         Control =(int)(Proporcional + Integral + Derivativo);
-        //Control=Control-Proporcional;
+       
         if(Control>120){
             Control=120;
         }
