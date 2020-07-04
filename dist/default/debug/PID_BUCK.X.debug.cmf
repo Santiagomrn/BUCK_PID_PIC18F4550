@@ -1,0 +1,1272 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\santi\AppData\Local\Temp\sf50.o
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/debug\PID_BUCK.X.debug.o
+cinit CODE 0 2864 2864 1A 1
+text0 CODE 0 CC6 CC6 43A 1
+text1 CODE 0 25F4 25F4 52 1
+text2 CODE 0 2538 2538 62 1
+text3 CODE 0 1BA6 1BA6 1B4 1
+text4 CODE 0 18C4 18C4 2E2 1
+text5 CODE 0 23CA 23CA C6 1
+text6 CODE 0 2798 2798 36 1
+text7 CODE 0 26D4 26D4 44 1
+text8 CODE 0 2300 2300 CA 1
+text9 CODE 0 2892 2892 2 1
+text10 CODE 0 2718 2718 40 1
+text11 CODE 0 2096 2096 164 1
+text12 CODE 0 1F0E 1F0E 188 1
+text13 CODE 0 1D5A 1D5A 1B4 1
+text14 CODE 0 21FA 21FA 106 1
+text15 CODE 0 268E 268E 46 1
+text16 CODE 0 806 806 4C0 1
+text17 CODE 0 1100 1100 42A 1
+text18 CODE 0 152A 152A 39A 1
+text19 CODE 0 259A 259A 5A 1
+text20 CODE 0 2758 2758 40 1
+text21 CODE 0 27CE 27CE 30 1
+text22 CODE 0 282C 282C 1C 1
+text23 CODE 0 27FE 27FE 2E 1
+text24 CODE 0 2848 2848 1C 1
+text25 CODE 0 2646 2646 48 1
+text26 CODE 0 2490 2490 A8 1
+text27 CODE 0 287E 287E 14 1
+cstackCOMRAM COMRAM 1 1 1 5F 1
+cstackBANK0 BANK0 1 60 60 5E 1
+bssBANK0 BANK0 1 BE BE 28 1
+smallconst SMALLCONST 0 800 800 6 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM E6-7FF 1
+SFR F60-FFF 1
+BANK0 E6-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7FF 1
+CONST 2894-7FFF 1
+STACK E6-7FF 1
+SMALLCONST 2894-7FFF 1
+CODE 4-7FF 1
+CODE 2894-7FFF 1
+BIGRAM E6-7FF 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 2894-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\PID_BUCK.X.debug.o
+287E text27 CODE >107:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+287E text27 CODE >109:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2880 text27 CODE >110:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2884 text27 CODE >111:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2888 text27 CODE >112:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+288C text27 CODE >113:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2890 text27 CODE >114:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2490 text26 CODE >115:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2490 text26 CODE >120:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+24A8 text26 CODE >121:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+24AC text26 CODE >122:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+24B4 text26 CODE >123:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+250A text26 CODE >126:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2518 text26 CODE >128:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+252E text26 CODE >129:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2536 text26 CODE >130:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2646 text25 CODE >279:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2646 text25 CODE >282:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+264A text25 CODE >283:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2656 text25 CODE >285:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+265E text25 CODE >286:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+266C text25 CODE >287:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+266E text25 CODE >288:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2688 text25 CODE >289:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+268C text25 CODE >290:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2848 text24 CODE >231:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+284A text24 CODE >233:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+284E text24 CODE >234:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2850 text24 CODE >235:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2852 text24 CODE >236:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2854 text24 CODE >237:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2856 text24 CODE >238:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2862 text24 CODE >239:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+27FE text23 CODE >215:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+27FE text23 CODE >217:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+280A text23 CODE >218:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+280E text23 CODE >219:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2812 text23 CODE >220:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2818 text23 CODE >221:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+281E text23 CODE >222:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2824 text23 CODE >223:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+282A text23 CODE >224:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+282C text22 CODE >241:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+282E text22 CODE >243:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2832 text22 CODE >244:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2834 text22 CODE >245:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2836 text22 CODE >246:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2838 text22 CODE >247:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+283A text22 CODE >248:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2846 text22 CODE >249:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+27CE text21 CODE >252:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+27CE text21 CODE >254:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+27D2 text21 CODE >256:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+27E0 text21 CODE >257:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+27E4 text21 CODE >254:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+27FC text21 CODE >260:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2758 text20 CODE >262:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+275A text20 CODE >264:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+275A text20 CODE >265:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+276A text20 CODE >267:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2772 text20 CODE >268:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2778 text20 CODE >269:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+277C text20 CODE >272:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2784 text20 CODE >273:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+278A text20 CODE >275:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2796 text20 CODE >277:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+259A text19 CODE >131:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+259A text19 CODE >135:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+259C text19 CODE >136:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+25A0 text19 CODE >137:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+25B8 text19 CODE >138:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+25E4 text19 CODE >139:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+25E8 text19 CODE >140:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+25EC text19 CODE >141:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+25F0 text19 CODE >142:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+25F2 text19 CODE >143:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+152A text18 CODE >11:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+152A text18 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1530 text18 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1536 text18 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1544 text18 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1546 text18 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1556 text18 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1566 text18 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1576 text18 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1578 text18 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+157C text18 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1580 text18 CODE >46:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1590 text18 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1596 text18 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+159C text18 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+15AA text18 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+15AC text18 CODE >56:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+15BC text18 CODE >58:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+15CC text18 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+15DC text18 CODE >63:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+15DE text18 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+15E2 text18 CODE >66:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+15E6 text18 CODE >69:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+15F6 text18 CODE >75:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+160C text18 CODE >76:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+161C text18 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1624 text18 CODE >78:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1628 text18 CODE >79:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+163C text18 CODE >83:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+164C text18 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+164C text18 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1660 text18 CODE >89:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+167A text18 CODE >92:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+168A text18 CODE >93:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+169A text18 CODE >94:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+16AA text18 CODE >96:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+16AE text18 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+16B2 text18 CODE >100:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+16C2 text18 CODE >101:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+16CC text18 CODE >102:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+16D6 text18 CODE >103:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+16E4 text18 CODE >104:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+16E6 text18 CODE >105:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+16E6 text18 CODE >106:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+16F0 text18 CODE >112:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+170E text18 CODE >115:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1710 text18 CODE >116:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1720 text18 CODE >118:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1722 text18 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1722 text18 CODE >119:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1732 text18 CODE >122:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1748 text18 CODE >123:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+174E text18 CODE >128:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1758 text18 CODE >129:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1766 text18 CODE >130:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1768 text18 CODE >131:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1768 text18 CODE >132:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1772 text18 CODE >133:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1778 text18 CODE >127:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1786 text18 CODE >139:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+178A text18 CODE >140:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1798 text18 CODE >141:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+17C6 text18 CODE >142:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+17CA text18 CODE >143:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+17CE text18 CODE >144:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+17CE text18 CODE >145:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+17E0 text18 CODE >149:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+17E0 text18 CODE >150:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+17F0 text18 CODE >151:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+17FC text18 CODE >152:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+180A text18 CODE >153:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1834 text18 CODE >154:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1838 text18 CODE >159:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1852 text18 CODE >160:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1858 text18 CODE >161:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1868 text18 CODE >165:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1882 text18 CODE >166:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+188A text18 CODE >167:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+189A text18 CODE >169:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+189E text18 CODE >173:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+18A2 text18 CODE >175:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+18B0 text18 CODE >176:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+18B2 text18 CODE >177:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+18B6 text18 CODE >180:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+18B8 text18 CODE >182:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+18C2 text18 CODE >185:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+1100 text17 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1100 text17 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1106 text17 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+110C text17 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+111A text17 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+111C text17 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+112C text17 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+113C text17 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+114C text17 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+114E text17 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1152 text17 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1162 text17 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1168 text17 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+116E text17 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+117C text17 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+117E text17 CODE >45:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+118E text17 CODE >48:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+119E text17 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+11AE text17 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+11B0 text17 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+11B4 text17 CODE >57:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+11C4 text17 CODE >58:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+11C4 text17 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+11E4 text17 CODE >66:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+11F8 text17 CODE >95:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1204 text17 CODE >96:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+120E text17 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1218 text17 CODE >98:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1224 text17 CODE >99:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1230 text17 CODE >100:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+123C text17 CODE >101:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1248 text17 CODE >102:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1254 text17 CODE >103:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1260 text17 CODE >104:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+126E text17 CODE >105:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+127A text17 CODE >106:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+128A text17 CODE >107:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1296 text17 CODE >108:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+12A6 text17 CODE >109:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+12B4 text17 CODE >110:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+12C0 text17 CODE >111:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+12D0 text17 CODE >112:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+12DC text17 CODE >113:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+12EC text17 CODE >114:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+12F8 text17 CODE >115:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1308 text17 CODE >116:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1314 text17 CODE >117:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+133E text17 CODE >145:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1374 text17 CODE >146:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1382 text17 CODE >149:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+139C text17 CODE >152:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+13A0 text17 CODE >153:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+13AA text17 CODE >154:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+13B8 text17 CODE >155:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+13BA text17 CODE >156:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+13BA text17 CODE >157:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+13C4 text17 CODE >158:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+13CA text17 CODE >152:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+13D8 text17 CODE >163:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+13DC text17 CODE >164:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+13EA text17 CODE >165:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1418 text17 CODE >166:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+141C text17 CODE >167:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1420 text17 CODE >168:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1420 text17 CODE >169:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1432 text17 CODE >173:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1432 text17 CODE >174:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1442 text17 CODE >175:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+144E text17 CODE >176:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+145C text17 CODE >177:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1486 text17 CODE >178:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+148A text17 CODE >183:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+14A4 text17 CODE >184:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+14B4 text17 CODE >185:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+14B8 text17 CODE >187:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+14D2 text17 CODE >188:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+14E2 text17 CODE >190:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+14E6 text17 CODE >191:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+14EA text17 CODE >192:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+14EA text17 CODE >194:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+14EE text17 CODE >195:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+14FE text17 CODE >196:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+150C text17 CODE >197:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+150E text17 CODE >199:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1514 text17 CODE >201:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1518 text17 CODE >203:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+1528 text17 CODE >205:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+806 text16 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+806 text16 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+80C text16 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+812 text16 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+820 text16 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+822 text16 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+832 text16 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+842 text16 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+852 text16 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+854 text16 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+858 text16 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+85C text16 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+86C text16 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+872 text16 CODE >46:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+884 text16 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+886 text16 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+88C text16 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+89A text16 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+89C text16 CODE >55:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+8AC text16 CODE >57:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+8BC text16 CODE >59:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+8CC text16 CODE >62:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+8CE text16 CODE >64:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+8D2 text16 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+8D6 text16 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+8E6 text16 CODE >75:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+8F8 text16 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+906 text16 CODE >78:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+90A text16 CODE >81:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+90E text16 CODE >82:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+912 text16 CODE >83:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+916 text16 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+91A text16 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+91E text16 CODE >86:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+922 text16 CODE >87:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+926 text16 CODE >88:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+92A text16 CODE >89:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+92E text16 CODE >90:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+932 text16 CODE >91:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+936 text16 CODE >92:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+93A text16 CODE >93:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+93E text16 CODE >94:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+942 text16 CODE >95:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+946 text16 CODE >98:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+94A text16 CODE >100:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+974 text16 CODE >101:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+990 text16 CODE >102:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9A0 text16 CODE >103:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9A4 text16 CODE >104:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9A8 text16 CODE >106:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9A8 text16 CODE >109:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9B6 text16 CODE >110:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9BE text16 CODE >111:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9C2 text16 CODE >113:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9C6 text16 CODE >115:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9D4 text16 CODE >116:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9D6 text16 CODE >118:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9E0 text16 CODE >119:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9E2 text16 CODE >106:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9E2 text16 CODE >120:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9F4 text16 CODE >121:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+9F4 text16 CODE >124:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+A02 text16 CODE >127:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+A12 text16 CODE >128:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+A26 text16 CODE >132:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+A36 text16 CODE >134:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+A44 text16 CODE >135:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+A52 text16 CODE >136:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+A5A text16 CODE >137:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+A5E text16 CODE >139:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+A62 text16 CODE >141:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+A70 text16 CODE >142:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+A72 text16 CODE >144:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+A7C text16 CODE >145:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+A82 text16 CODE >153:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+AA8 text16 CODE >154:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+AD8 text16 CODE >155:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+ADC text16 CODE >156:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+ADE text16 CODE >157:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+AEE text16 CODE >158:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+AFE text16 CODE >162:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B0E text16 CODE >163:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B0E text16 CODE >166:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B34 text16 CODE >167:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B48 text16 CODE >172:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B52 text16 CODE >173:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B60 text16 CODE >174:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B62 text16 CODE >176:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B70 text16 CODE >177:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B74 text16 CODE >178:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B78 text16 CODE >180:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B7C text16 CODE >182:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B8C text16 CODE >183:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B8E text16 CODE >171:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+B9C text16 CODE >192:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+BA0 text16 CODE >193:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+BAE text16 CODE >194:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+BC4 text16 CODE >195:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+BC8 text16 CODE >196:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+BCC text16 CODE >197:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+BCC text16 CODE >198:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+BDE text16 CODE >202:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+BDE text16 CODE >203:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+BEE text16 CODE >204:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+BFA text16 CODE >205:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+C08 text16 CODE >206:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+C32 text16 CODE >207:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+C42 text16 CODE >208:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+C44 text16 CODE >215:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+C64 text16 CODE >216:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+C74 text16 CODE >218:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+C84 text16 CODE >219:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+C88 text16 CODE >225:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+C96 text16 CODE >226:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+C98 text16 CODE >227:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+C9C text16 CODE >230:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+C9E text16 CODE >232:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+CA4 text16 CODE >233:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+CB2 text16 CODE >234:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+CB4 text16 CODE >236:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+CC4 text16 CODE >237:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+268E text15 CODE >245:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+268E text15 CODE >248:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+269E text15 CODE >249:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+26D2 text15 CODE >250:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+21FA text14 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+21FA text14 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+2210 text14 CODE >48:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+2224 text14 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+224E text14 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+2250 text14 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+2260 text14 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+2264 text14 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+2272 text14 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+228A text14 CODE >57:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+229E text14 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+22B2 text14 CODE >63:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+22BC text14 CODE >64:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+22BE text14 CODE >62:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+22CE text14 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+22DE text14 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+22EE text14 CODE >69:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+22FE text14 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+1D5A text13 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1D5C text13 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1D7A text13 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1DAC text13 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1DB0 text13 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1DB0 text13 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1DC0 text13 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1DD6 text13 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1DEA text13 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1DEE text13 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1DF2 text13 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1DF4 text13 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1DFE text13 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1E30 text13 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1E32 text13 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1E3E text13 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1E48 text13 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1E48 text13 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1E7A text13 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1E7C text13 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1E86 text13 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1EA4 text13 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1EB2 text13 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1EB4 text13 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1EB8 text13 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1EDC text13 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1EFA text13 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1EFC text13 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1F0C text13 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1F0E text12 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1F0E text12 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1F12 text12 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1F20 text12 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1F40 text12 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1F44 text12 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1F52 text12 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1F72 text12 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1F76 text12 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1F82 text12 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1FA0 text12 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1FA4 text12 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1FA8 text12 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1FBA text12 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1FBC text12 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1FCA text12 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1FDC text12 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+200A text12 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+202A text12 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+202C text12 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+203E text12 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+2044 text12 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+2054 text12 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+2074 text12 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+2094 text12 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+2096 text11 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+2096 text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+209A text11 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+20A8 text11 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+20C8 text11 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+20CC text11 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+20DA text11 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+20FA text11 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+2118 text11 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+211C text11 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+2120 text11 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+2132 text11 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+2134 text11 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+2142 text11 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+2170 text11 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+2190 text11 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+21A2 text11 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+21A8 text11 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+21B8 text11 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+21D8 text11 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+21F8 text11 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+2718 text10 CODE >1:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+2718 text10 CODE >3:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+2756 text10 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+2892 text9 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\putch.c
+2892 text9 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\putch.c
+2300 text8 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+2300 text8 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+2324 text8 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+232A text8 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+232E text8 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+2382 text8 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+23B6 text8 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+23C8 text8 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+26D4 text7 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+26D4 text7 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+26DC text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+26E0 text7 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+26F2 text7 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+26F6 text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+2716 text7 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+2798 text6 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+2798 text6 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+27A0 text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+27A4 text6 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+27A8 text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+27C0 text6 CODE >11:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+27CC text6 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+23CA text5 CODE >72:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+23CA text5 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+23DA text5 CODE >78:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+23EE text5 CODE >82:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+2410 text5 CODE >83:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+2418 text5 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+241C text5 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+2430 text5 CODE >86:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+2434 text5 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+2452 text5 CODE >90:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+2462 text5 CODE >91:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+2476 text5 CODE >94:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+248E text5 CODE >95:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+18C4 text4 CODE >274:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+18C4 text4 CODE >280:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+18E4 text4 CODE >281:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+18FA text4 CODE >282:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+190C text4 CODE >283:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+192C text4 CODE >287:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+193C text4 CODE >288:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+193E text4 CODE >290:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+196C text4 CODE >291:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1974 text4 CODE >292:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1994 text4 CODE >293:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+199A text4 CODE >297:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+19A2 text4 CODE >298:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+19A6 text4 CODE >299:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+19AA text4 CODE >300:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+19B0 text4 CODE >301:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A32 text4 CODE >302:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A38 text4 CODE >303:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A3E text4 CODE >304:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1AA2 text4 CODE >299:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1B1E text4 CODE >308:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1B40 text4 CODE >309:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1B46 text4 CODE >310:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1B7C text4 CODE >314:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1BA4 text4 CODE >315:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1BA6 text3 CODE >670:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1BA6 text3 CODE >680:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1BCA text3 CODE >681:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1BD8 text3 CODE >683:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1BEA text3 CODE >684:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1BEE text3 CODE >825:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1C36 text3 CODE >827:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1C44 text3 CODE >828:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1C7E text3 CODE >830:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1CB6 text3 CODE >1350:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1CDA text3 CODE >1351:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1CE8 text3 CODE >1352:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1CFC text3 CODE >1353:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1D08 text3 CODE >1357:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1D16 text3 CODE >1358:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1D22 text3 CODE >1362:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1D46 text3 CODE >1363:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1D58 text3 CODE >1365:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+2538 text2 CODE >1368:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+2538 text2 CODE >1373:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+2540 text2 CODE >1374:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+254A text2 CODE >1375:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+254E text2 CODE >1376:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+2574 text2 CODE >1375:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+2590 text2 CODE >1378:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+2598 text2 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+25F4 text1 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+25F4 text1 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+25FE text1 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+2606 text1 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+260E text1 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+2616 text1 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+2632 text1 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+2644 text1 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+CC6 text0 CODE >145:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+CC6 text0 CODE >147:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+CCA text0 CODE >148:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+CCE text0 CODE >151:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+CE0 text0 CODE >152:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+CF0 text0 CODE >153:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+D00 text0 CODE >155:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+D00 text0 CODE >156:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+D08 text0 CODE >157:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+D08 text0 CODE >158:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+D08 text0 CODE >159:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+D18 text0 CODE >160:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+D18 text0 CODE >161:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+D28 text0 CODE >162:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+D38 text0 CODE >163:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+D38 text0 CODE >164:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+D38 text0 CODE >168:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+D4C text0 CODE >170:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+D82 text0 CODE >171:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+DB6 text0 CODE >172:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+E42 text0 CODE >173:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+EBE text0 CODE >174:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+ECE text0 CODE >179:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+F42 text0 CODE >181:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+F60 text0 CODE >182:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+F68 text0 CODE >184:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+F74 text0 CODE >186:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+F90 text0 CODE >187:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+FA2 text0 CODE >189:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+FBE text0 CODE >190:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+FDA text0 CODE >191:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+FEC text0 CODE >193:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+1008 text0 CODE >194:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+1024 text0 CODE >195:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+1036 text0 CODE >197:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+1052 text0 CODE >198:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+106E text0 CODE >199:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+1080 text0 CODE >201:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+109C text0 CODE >202:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+10B8 text0 CODE >203:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+10CA text0 CODE >205:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+10CA text0 CODE >206:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+10E6 text0 CODE >207:C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
+2864 cinit CODE >632:C:\Users\santi\AppData\Local\Temp\sf50.s
+2864 cinit CODE >634:C:\Users\santi\AppData\Local\Temp\sf50.s
+2864 cinit CODE >637:C:\Users\santi\AppData\Local\Temp\sf50.s
+2864 cinit CODE >656:C:\Users\santi\AppData\Local\Temp\sf50.s
+2868 cinit CODE >657:C:\Users\santi\AppData\Local\Temp\sf50.s
+286A cinit CODE >658:C:\Users\santi\AppData\Local\Temp\sf50.s
+286A cinit CODE >659:C:\Users\santi\AppData\Local\Temp\sf50.s
+286C cinit CODE >660:C:\Users\santi\AppData\Local\Temp\sf50.s
+286E cinit CODE >661:C:\Users\santi\AppData\Local\Temp\sf50.s
+2870 cinit CODE >667:C:\Users\santi\AppData\Local\Temp\sf50.s
+2870 cinit CODE >670:C:\Users\santi\AppData\Local\Temp\sf50.s
+2872 cinit CODE >671:C:\Users\santi\AppData\Local\Temp\sf50.s
+2874 cinit CODE >672:C:\Users\santi\AppData\Local\Temp\sf50.s
+2876 cinit CODE >673:C:\Users\santi\AppData\Local\Temp\sf50.s
+2878 cinit CODE >674:C:\Users\santi\AppData\Local\Temp\sf50.s
+287A cinit CODE >675:C:\Users\santi\AppData\Local\Temp\sf50.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\PID_BUCK.X.debug.o
+__Hspace_0 30000E 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Hspace_1 E6 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Hspace_2 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\PID_BUCK.X.debug.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\santi\AppData\Local\Temp\sf50.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\PID_BUCK.X.debug.o
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+main@PDerivativo 9E 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+_GO 7E11 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+?_abs 13 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+?_pad 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+main@T A6 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+?_vfprintf 50 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug\PID_BUCK.X.debug.o
+_ADON 7E10 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_LATB F8A 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_TMR0 FD6 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_TMR2 FCC 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+___sp 0 0 STACK 2 stack C:\Users\santi\AppData\Local\Temp\sf50.o
+_dbuf C6 0 BANK0 1 bssBANK0 dist/default/debug\PID_BUCK.X.debug.o
+_dtoa 18C4 0 CODE 0 text4 dist/default/debug\PID_BUCK.X.debug.o
+_main CC6 0 CODE 0 text0 dist/default/debug\PID_BUCK.X.debug.o
+_nout BE 0 BANK0 1 bssBANK0 dist/default/debug\PID_BUCK.X.debug.o
+_prec C2 0 BANK0 1 bssBANK0 dist/default/debug\PID_BUCK.X.debug.o
+abs@a 13 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+pad@i 18 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+pad@p 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+pad@w 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+start 0 0 CODE 0 init C:\Users\santi\AppData\Local\Temp\sf50.o
+___aomod@counter 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___flmul@aexp 12 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___flmul@bexp 13 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___flmul@prod 14 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___flmul@sign D 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___flmul@temp 18 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__size_of___aodiv 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of___aomod 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of___fladd 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of___fldiv 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of___flmul 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of___flsub 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of___fltol 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of_dtoa 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of_main 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+pad@fp 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+_MSdelay 2646 0 CODE 0 text25 dist/default/debug\PID_BUCK.X.debug.o
+LCD_Char@dat 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+_LCD_Char 282C 0 CODE 0 text22 dist/default/debug\PID_BUCK.X.debug.o
+_LCD_Init 27FE 0 CODE 0 text23 dist/default/debug\PID_BUCK.X.debug.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/debug\PID_BUCK.X.debug.o
+__end_of_vfpfcnvrt 1D5A 0 CODE 0 text3 dist/default/debug\PID_BUCK.X.debug.o
+__size_of_ADC_Init 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of_ADC_Read 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__accesstop 60 0 ABS 0 - C:\Users\santi\AppData\Local\Temp\sf50.o
+__end_of_LCD_Char 2848 0 CODE 0 text22 dist/default/debug\PID_BUCK.X.debug.o
+__end_of_LCD_Init 282C 0 CODE 0 text23 dist/default/debug\PID_BUCK.X.debug.o
+intlevel0 0 0 CODE 0 text C:\Users\santi\AppData\Local\Temp\sf50.o
+intlevel1 0 0 CODE 0 text C:\Users\santi\AppData\Local\Temp\sf50.o
+intlevel2 0 0 CODE 0 text C:\Users\santi\AppData\Local\Temp\sf50.o
+intlevel3 0 0 CODE 0 text C:\Users\santi\AppData\Local\Temp\sf50.o
+__CFG_USBDIV$1 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\PID_BUCK.X.debug.o
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug\PID_BUCK.X.debug.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug\PID_BUCK.X.debug.o
+_vfpfcnvrt 1BA6 0 CODE 0 text3 dist/default/debug\PID_BUCK.X.debug.o
+dtoa@fp 1C 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+_ADCON0 FC2 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_ADCON1 FC1 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_ADCON2 FC0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_ADRESH FC4 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_ADRESL FC3 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\santi\AppData\Local\Temp\sf50.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\santi\AppData\Local\Temp\sf50.o
+_LCD_String 27CE 0 CODE 0 text21 dist/default/debug\PID_BUCK.X.debug.o
+_CCPR1L FBE 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/debug\PID_BUCK.X.debug.o
+main@PProporcional 9A 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\PID_BUCK.X.debug.o
+main@str 70 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__size_of_sprintf 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+___fldiv@aexp 4A 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___fldiv@bexp 49 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___fldiv@sign 42 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\PID_BUCK.X.debug.o
+_ADC_Init 287E 0 CODE 0 text27 dist/default/debug\PID_BUCK.X.debug.o
+_ADC_Read 2490 0 CODE 0 text26 dist/default/debug\PID_BUCK.X.debug.o
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/debug\PID_BUCK.X.debug.o
+__end_of___aodiv 2096 0 CODE 0 text12 dist/default/debug\PID_BUCK.X.debug.o
+__end_of___aomod 21FA 0 CODE 0 text11 dist/default/debug\PID_BUCK.X.debug.o
+__end_of___fladd CC6 0 CODE 0 text16 dist/default/debug\PID_BUCK.X.debug.o
+__end_of___fldiv 18C4 0 CODE 0 text18 dist/default/debug\PID_BUCK.X.debug.o
+__end_of___flmul 152A 0 CODE 0 text17 dist/default/debug\PID_BUCK.X.debug.o
+__end_of___flsub 26D4 0 CODE 0 text15 dist/default/debug\PID_BUCK.X.debug.o
+__end_of___fltol 2300 0 CODE 0 text14 dist/default/debug\PID_BUCK.X.debug.o
+___aodiv@quotient 13 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+?_strlen 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__end_of_ADC_Init 2892 0 CODE 0 text27 dist/default/debug\PID_BUCK.X.debug.o
+__end_of_ADC_Read 2538 0 CODE 0 text26 dist/default/debug\PID_BUCK.X.debug.o
+___aomod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__size_of_fputc 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of_fputs 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+___fladd@a 1E 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___fladd@b 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___fldiv@a 36 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___fldiv@b 32 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__size_of_putch 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+___flmul@a 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___flmul@b 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___flsub@a 2E 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___flsub@b 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/debug\PID_BUCK.X.debug.o
+ADC_Read@channel 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+___aomod@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+main@Error_0 A2 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+start_initialization 2864 0 CODE 0 cinit dist/default/debug\PID_BUCK.X.debug.o
+__CFG_PBADEN$ON 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\PID_BUCK.X.debug.o
+__end_of_LCD_String 27FE 0 CODE 0 text21 dist/default/debug\PID_BUCK.X.debug.o
+___rparam_used 1 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__end_of_LCD_Command 2864 0 CODE 0 text24 dist/default/debug\PID_BUCK.X.debug.o
+_TMR0IF 7F92 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_TMR2ON 7E52 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_TRISC2 7CA2 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+LCD_String_xy@msg 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+LCD_String_xy@pos 8 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+LCD_String_xy@row B 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+_dtoa$288 2E 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+fputc@fp 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+fputs@fp C 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/debug\PID_BUCK.X.debug.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/debug\PID_BUCK.X.debug.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/debug\PID_BUCK.X.debug.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/debug\PID_BUCK.X.debug.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/debug\PID_BUCK.X.debug.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/debug\PID_BUCK.X.debug.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/debug\PID_BUCK.X.debug.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/debug\PID_BUCK.X.debug.o
+__Hcinit 0 0 ABS 0 cinit dist/default/debug\PID_BUCK.X.debug.o
+__Hconst 0 0 CONST 0 const dist/default/debug\PID_BUCK.X.debug.o
+__end_of_strlen 27CE 0 CODE 0 text6 dist/default/debug\PID_BUCK.X.debug.o
+__Hidata 0 0 CODE 0 idata dist/default/debug\PID_BUCK.X.debug.o
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/debug\PID_BUCK.X.debug.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\PID_BUCK.X.debug.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug\PID_BUCK.X.debug.o
+PWM@output 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug\PID_BUCK.X.debug.o
+__Hstack 0 0 STACK 2 stack dist/default/debug\PID_BUCK.X.debug.o
+__Htext0 0 0 ABS 0 text0 dist/default/debug\PID_BUCK.X.debug.o
+__Htext1 0 0 ABS 0 text1 dist/default/debug\PID_BUCK.X.debug.o
+__Htext2 0 0 ABS 0 text2 dist/default/debug\PID_BUCK.X.debug.o
+__Htext3 0 0 ABS 0 text3 dist/default/debug\PID_BUCK.X.debug.o
+__Htext4 0 0 ABS 0 text4 dist/default/debug\PID_BUCK.X.debug.o
+__Htext5 0 0 ABS 0 text5 dist/default/debug\PID_BUCK.X.debug.o
+__Htext6 0 0 ABS 0 text6 dist/default/debug\PID_BUCK.X.debug.o
+__Htext7 0 0 ABS 0 text7 dist/default/debug\PID_BUCK.X.debug.o
+__Htext8 0 0 ABS 0 text8 dist/default/debug\PID_BUCK.X.debug.o
+__Htext9 0 0 ABS 0 text9 dist/default/debug\PID_BUCK.X.debug.o
+main@Derivativo AE 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__size_of___xxtofl 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\PID_BUCK.X.debug.o
+__Hbigram 0 0 ABS 0 bigram dist/default/debug\PID_BUCK.X.debug.o
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\santi\AppData\Local\Temp\sf50.o
+_LCD_String_xy 2758 0 CODE 0 text20 dist/default/debug\PID_BUCK.X.debug.o
+___xxtofl@arg B 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___xxtofl@exp A 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___xxtofl@val 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__end_of_sprintf 2646 0 CODE 0 text1 dist/default/debug\PID_BUCK.X.debug.o
+__Hcomram 0 0 ABS 0 comram dist/default/debug\PID_BUCK.X.debug.o
+__Hconfig 30000E 0 CONFIG 0 config dist/default/debug\PID_BUCK.X.debug.o
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/debug\PID_BUCK.X.debug.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/debug\PID_BUCK.X.debug.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/debug\PID_BUCK.X.debug.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/debug\PID_BUCK.X.debug.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/debug\PID_BUCK.X.debug.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/debug\PID_BUCK.X.debug.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/debug\PID_BUCK.X.debug.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/debug\PID_BUCK.X.debug.o
+__Lcinit 0 0 ABS 0 cinit dist/default/debug\PID_BUCK.X.debug.o
+__Lconst 0 0 CONST 0 const dist/default/debug\PID_BUCK.X.debug.o
+__Lidata 0 0 CODE 0 idata dist/default/debug\PID_BUCK.X.debug.o
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/debug\PID_BUCK.X.debug.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\PID_BUCK.X.debug.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug\PID_BUCK.X.debug.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug\PID_BUCK.X.debug.o
+__Lstack 0 0 STACK 2 stack dist/default/debug\PID_BUCK.X.debug.o
+__Ltext0 0 0 ABS 0 text0 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext1 0 0 ABS 0 text1 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext2 0 0 ABS 0 text2 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext3 0 0 ABS 0 text3 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext4 0 0 ABS 0 text4 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext5 0 0 ABS 0 text5 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext6 0 0 ABS 0 text6 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext7 0 0 ABS 0 text7 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext8 0 0 ABS 0 text8 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext9 0 0 ABS 0 text9 dist/default/debug\PID_BUCK.X.debug.o
+MSdelay@val 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\PID_BUCK.X.debug.o
+___flmul@grs E 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/debug\PID_BUCK.X.debug.o
+__Habs1 0 0 ABS 0 abs1 dist/default/debug\PID_BUCK.X.debug.o
+__Hdata 0 0 ABS 0 data dist/default/debug\PID_BUCK.X.debug.o
+__Hinit 4 0 CODE 0 init dist/default/debug\PID_BUCK.X.debug.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug\PID_BUCK.X.debug.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug\PID_BUCK.X.debug.o
+__Htemp 0 0 COMRAM 1 temp dist/default/debug\PID_BUCK.X.debug.o
+__Htext 0 0 ABS 0 text dist/default/debug\PID_BUCK.X.debug.o
+__Labs1 0 0 ABS 0 abs1 dist/default/debug\PID_BUCK.X.debug.o
+__Ldata 0 0 ABS 0 data dist/default/debug\PID_BUCK.X.debug.o
+__Linit 0 0 CODE 0 init dist/default/debug\PID_BUCK.X.debug.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug\PID_BUCK.X.debug.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug\PID_BUCK.X.debug.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/debug\PID_BUCK.X.debug.o
+__Ltext 0 0 ABS 0 text dist/default/debug\PID_BUCK.X.debug.o
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+___aodiv@counter 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___aomod@sign 12 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Hintret 0 0 ABS 0 intret dist/default/debug\PID_BUCK.X.debug.o
+__Hirdata 0 0 CODE 0 irdata dist/default/debug\PID_BUCK.X.debug.o
+_PR2 FCB 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_PWM 259A 0 CODE 0 text19 dist/default/debug\PID_BUCK.X.debug.o
+__S0 30000E 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__S1 E6 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__S2 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_abs 2718 0 CODE 0 text10 dist/default/debug\PID_BUCK.X.debug.o
+_pad 23CA 0 CODE 0 text5 dist/default/debug\PID_BUCK.X.debug.o
+__CFG_VREGEN$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+?_ADC_Read 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__CFG_PLLDIV$5 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+___aodiv@sign 12 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\PID_BUCK.X.debug.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\PID_BUCK.X.debug.o
+sprintf@fmt 5A 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___xxtofl 1D5A 0 CODE 0 text13 dist/default/debug\PID_BUCK.X.debug.o
+__end_of_PWM 25F4 0 CODE 0 text19 dist/default/debug\PID_BUCK.X.debug.o
+__end_of_abs 2758 0 CODE 0 text10 dist/default/debug\PID_BUCK.X.debug.o
+__end_of_pad 2490 0 CODE 0 text5 dist/default/debug\PID_BUCK.X.debug.o
+__size_of_MSdelay 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Lintentry 0 0 ABS 0 intentry dist/default/debug\PID_BUCK.X.debug.o
+__Hramtop 800 0 RAM 0 ramtop dist/default/debug\PID_BUCK.X.debug.o
+strlen@a 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+strlen@s 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/debug\PID_BUCK.X.debug.o
+__end_of___xxtofl 1F0E 0 CODE 0 text13 dist/default/debug\PID_BUCK.X.debug.o
+__activetblptr 1 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug\PID_BUCK.X.debug.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__Htext10 0 0 ABS 0 text10 dist/default/debug\PID_BUCK.X.debug.o
+__Htext11 0 0 ABS 0 text11 dist/default/debug\PID_BUCK.X.debug.o
+__Htext12 0 0 ABS 0 text12 dist/default/debug\PID_BUCK.X.debug.o
+__Htext13 0 0 ABS 0 text13 dist/default/debug\PID_BUCK.X.debug.o
+__Htext14 0 0 ABS 0 text14 dist/default/debug\PID_BUCK.X.debug.o
+__Htext15 0 0 ABS 0 text15 dist/default/debug\PID_BUCK.X.debug.o
+__Htext16 0 0 ABS 0 text16 dist/default/debug\PID_BUCK.X.debug.o
+__Htext17 0 0 ABS 0 text17 dist/default/debug\PID_BUCK.X.debug.o
+__Htext18 0 0 ABS 0 text18 dist/default/debug\PID_BUCK.X.debug.o
+__Htext19 0 0 ABS 0 text19 dist/default/debug\PID_BUCK.X.debug.o
+__Htext20 0 0 ABS 0 text20 dist/default/debug\PID_BUCK.X.debug.o
+__Htext21 0 0 ABS 0 text21 dist/default/debug\PID_BUCK.X.debug.o
+__Htext22 0 0 ABS 0 text22 dist/default/debug\PID_BUCK.X.debug.o
+__Htext23 0 0 ABS 0 text23 dist/default/debug\PID_BUCK.X.debug.o
+__Htext24 0 0 ABS 0 text24 dist/default/debug\PID_BUCK.X.debug.o
+__Htext25 0 0 ABS 0 text25 dist/default/debug\PID_BUCK.X.debug.o
+__Htext26 0 0 ABS 0 text26 dist/default/debug\PID_BUCK.X.debug.o
+__Htext27 0 0 ABS 0 text27 dist/default/debug\PID_BUCK.X.debug.o
+vfpfcnvrt@fmt 42 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+MSdelay@i 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+pad@buf 13 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___fladd@signs 26 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__ptext10 2718 0 CODE 0 text10 dist/default/debug\PID_BUCK.X.debug.o
+__ptext11 2096 0 CODE 0 text11 dist/default/debug\PID_BUCK.X.debug.o
+__ptext12 1F0E 0 CODE 0 text12 dist/default/debug\PID_BUCK.X.debug.o
+__ptext13 1D5A 0 CODE 0 text13 dist/default/debug\PID_BUCK.X.debug.o
+__ptext14 21FA 0 CODE 0 text14 dist/default/debug\PID_BUCK.X.debug.o
+__ptext15 268E 0 CODE 0 text15 dist/default/debug\PID_BUCK.X.debug.o
+__ptext16 806 0 CODE 0 text16 dist/default/debug\PID_BUCK.X.debug.o
+__ptext17 1100 0 CODE 0 text17 dist/default/debug\PID_BUCK.X.debug.o
+__ptext18 152A 0 CODE 0 text18 dist/default/debug\PID_BUCK.X.debug.o
+__ptext19 259A 0 CODE 0 text19 dist/default/debug\PID_BUCK.X.debug.o
+__ptext20 2758 0 CODE 0 text20 dist/default/debug\PID_BUCK.X.debug.o
+__ptext21 27CE 0 CODE 0 text21 dist/default/debug\PID_BUCK.X.debug.o
+__ptext22 282C 0 CODE 0 text22 dist/default/debug\PID_BUCK.X.debug.o
+__ptext23 27FE 0 CODE 0 text23 dist/default/debug\PID_BUCK.X.debug.o
+__ptext24 2848 0 CODE 0 text24 dist/default/debug\PID_BUCK.X.debug.o
+__ptext25 2646 0 CODE 0 text25 dist/default/debug\PID_BUCK.X.debug.o
+__ptext26 2490 0 CODE 0 text26 dist/default/debug\PID_BUCK.X.debug.o
+__ptext27 287E 0 CODE 0 text27 dist/default/debug\PID_BUCK.X.debug.o
+___aodiv 1F0E 0 CODE 0 text12 dist/default/debug\PID_BUCK.X.debug.o
+___aomod 2096 0 CODE 0 text11 dist/default/debug\PID_BUCK.X.debug.o
+___fladd 806 0 CODE 0 text16 dist/default/debug\PID_BUCK.X.debug.o
+___fldiv 152A 0 CODE 0 text18 dist/default/debug\PID_BUCK.X.debug.o
+___flmul 1100 0 CODE 0 text17 dist/default/debug\PID_BUCK.X.debug.o
+___flsub 268E 0 CODE 0 text15 dist/default/debug\PID_BUCK.X.debug.o
+___fltol 21FA 0 CODE 0 text14 dist/default/debug\PID_BUCK.X.debug.o
+__size_of_LCD_String_xy 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+ADC_Read@digital 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\PID_BUCK.X.debug.o
+__Lbigram 0 0 ABS 0 bigram dist/default/debug\PID_BUCK.X.debug.o
+__CFG_BOR$ON 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_BORV$3 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+?_dtoa 1C 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Lcomram 0 0 ABS 0 comram dist/default/debug\PID_BUCK.X.debug.o
+__Lconfig 300000 0 CONFIG 0 config dist/default/debug\PID_BUCK.X.debug.o
+__size_of_LCD_Command 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+___fldiv@grs 45 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___fldiv@rem 3E 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+LCD_String_xy@location C 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+main@Error BA 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__size_of_LCD_String 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\PID_BUCK.X.debug.o
+main@input B8 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+_strlen 2798 0 CODE 0 text6 dist/default/debug\PID_BUCK.X.debug.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug\PID_BUCK.X.debug.o
+___fldiv@new_exp 43 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__size_of_vfprintf 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_CCP2MX$ON 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+main@PIntegral 9C 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+stackhi 7FF 0 ABS 0 - C:\Users\santi\AppData\Local\Temp\sf50.o
+stacklo E6 0 ABS 0 - C:\Users\santi\AppData\Local\Temp\sf50.o
+__Lintcode 0 0 CODE 0 intcode dist/default/debug\PID_BUCK.X.debug.o
+main@Control B2 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__Lintret 0 0 ABS 0 intret dist/default/debug\PID_BUCK.X.debug.o
+__Lirdata 0 0 CODE 0 irdata dist/default/debug\PID_BUCK.X.debug.o
+_ADCON0bits FC2 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_ADCON2bits FC0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+___fladd@grs 29 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__CFG_ICPRT$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__end_of_LCD_String_xy 2798 0 CODE 0 text20 dist/default/debug\PID_BUCK.X.debug.o
+?_vfpfcnvrt 40 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Lspace_0 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Lspace_1 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Lspace_2 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+main@Kd 8C 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+main@Ki 88 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+main@Kp 84 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+main@pE A0 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+___aodiv@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___aodiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___fltol@exp1 33 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+end_of_initialization 2870 0 CODE 0 cinit dist/default/debug\PID_BUCK.X.debug.o
+__end_of_MSdelay 268E 0 CODE 0 text25 dist/default/debug\PID_BUCK.X.debug.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\PID_BUCK.X.debug.o
+__Hintentry 0 0 ABS 0 intentry dist/default/debug\PID_BUCK.X.debug.o
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+fputc@c 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+fputs@c E 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+fputs@i F 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+fputs@s A 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+?___aodiv 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+?___aomod 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+?___fladd 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+?___fldiv 32 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+?___flmul 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+?___flsub 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+?___fltol 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+vfprintf@fmt 52 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/debug\PID_BUCK.X.debug.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__Lramtop 800 0 RAM 0 ramtop dist/default/debug\PID_BUCK.X.debug.o
+__size_of_strlen 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/debug\PID_BUCK.X.debug.o
+__pcinit 2864 0 CODE 0 cinit dist/default/debug\PID_BUCK.X.debug.o
+vfpfcnvrt@ap 44 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+vfpfcnvrt@fp 40 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+vfpfcnvrt@ll 48 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__ptext0 CC6 0 CODE 0 text0 dist/default/debug\PID_BUCK.X.debug.o
+__ptext1 25F4 0 CODE 0 text1 dist/default/debug\PID_BUCK.X.debug.o
+__ptext2 2538 0 CODE 0 text2 dist/default/debug\PID_BUCK.X.debug.o
+__ptext3 1BA6 0 CODE 0 text3 dist/default/debug\PID_BUCK.X.debug.o
+__ptext4 18C4 0 CODE 0 text4 dist/default/debug\PID_BUCK.X.debug.o
+__ptext5 23CA 0 CODE 0 text5 dist/default/debug\PID_BUCK.X.debug.o
+__ptext6 2798 0 CODE 0 text6 dist/default/debug\PID_BUCK.X.debug.o
+__ptext7 26D4 0 CODE 0 text7 dist/default/debug\PID_BUCK.X.debug.o
+__ptext8 2300 0 CODE 0 text8 dist/default/debug\PID_BUCK.X.debug.o
+__ptext9 2892 0 CODE 0 text9 dist/default/debug\PID_BUCK.X.debug.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug\PID_BUCK.X.debug.o
+vfprintf@ap 54 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+vfprintf@fp 50 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+vfprintf@cfmt 56 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Ltext10 0 0 ABS 0 text10 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext11 0 0 ABS 0 text11 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext12 0 0 ABS 0 text12 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext13 0 0 ABS 0 text13 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext14 0 0 ABS 0 text14 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext15 0 0 ABS 0 text15 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext16 0 0 ABS 0 text16 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext17 0 0 ABS 0 text17 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext18 0 0 ABS 0 text18 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext19 0 0 ABS 0 text19 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext20 0 0 ABS 0 text20 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext21 0 0 ABS 0 text21 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext22 0 0 ABS 0 text22 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext23 0 0 ABS 0 text23 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext24 0 0 ABS 0 text24 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext25 0 0 ABS 0 text25 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext26 0 0 ABS 0 text26 dist/default/debug\PID_BUCK.X.debug.o
+__Ltext27 0 0 ABS 0 text27 dist/default/debug\PID_BUCK.X.debug.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\santi\AppData\Local\Temp\sf50.o
+_sprintf 25F4 0 CODE 0 text1 dist/default/debug\PID_BUCK.X.debug.o
+_vfprintf 2538 0 CODE 0 text2 dist/default/debug\PID_BUCK.X.debug.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/debug\PID_BUCK.X.debug.o
+?___xxtofl 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\PID_BUCK.X.debug.o
+sprintf@ap 62 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+___fladd@aexp 27 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___fladd@bexp 28 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+LCD_String@msg 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___fltol@sign1 32 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug\PID_BUCK.X.debug.o
+main@offset 98 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__CFG_WDT$ON 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\PID_BUCK.X.debug.o
+__end_of_vfprintf 259A 0 CODE 0 text2 dist/default/debug\PID_BUCK.X.debug.o
+___fltol@f1 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+___param_bank 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\PID_BUCK.X.debug.o
+__end_of__initialization 2870 0 CODE 0 cinit dist/default/debug\PID_BUCK.X.debug.o
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug\PID_BUCK.X.debug.o
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+main@Integral B4 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug\PID_BUCK.X.debug.o
+__CFG_FOSC$HSPLL_HS 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+LCD_Command@cmd 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__CFG_PWRT$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+sprintf@f 64 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+sprintf@s 58 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__end_of_dtoa 1BA6 0 CODE 0 text4 dist/default/debug\PID_BUCK.X.debug.o
+__end_of_main 1100 0 CODE 0 text0 dist/default/debug\PID_BUCK.X.debug.o
+__end_of_fputc 23CA 0 CODE 0 text8 dist/default/debug\PID_BUCK.X.debug.o
+__end_of_fputs 2718 0 CODE 0 text7 dist/default/debug\PID_BUCK.X.debug.o
+_LATD0 7C60 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_LATD1 7C61 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+?_sprintf 58 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+_T0CON FD5 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_T2CON FCA 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_TRISA F92 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_TRISB F93 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_TRISD F95 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__end_of_putch 2894 0 CODE 0 text9 dist/default/debug\PID_BUCK.X.debug.o
+_main$994 90 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+_main$995 94 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__HRAM 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Hbss 0 0 RAM 1 bss dist/default/debug\PID_BUCK.X.debug.o
+__Hram 0 0 ABS 0 ram dist/default/debug\PID_BUCK.X.debug.o
+__Hsfr 0 0 ABS 0 sfr dist/default/debug\PID_BUCK.X.debug.o
+__LRAM 1 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Lbss 0 0 RAM 1 bss dist/default/debug\PID_BUCK.X.debug.o
+__Lram 0 0 ABS 0 ram dist/default/debug\PID_BUCK.X.debug.o
+__Lsfr 0 0 ABS 0 sfr dist/default/debug\PID_BUCK.X.debug.o
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_flags C4 0 BANK0 1 bssBANK0 dist/default/debug\PID_BUCK.X.debug.o
+_fputc 2300 0 CODE 0 text8 dist/default/debug\PID_BUCK.X.debug.o
+_fputs 26D4 0 CODE 0 text7 dist/default/debug\PID_BUCK.X.debug.o
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_putch 2892 0 CODE 0 text9 dist/default/debug\PID_BUCK.X.debug.o
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+_width C0 0 BANK0 1 bssBANK0 dist/default/debug\PID_BUCK.X.debug.o
+_CCP1CON FBD 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+main@Proporcional AA 0 BANK0 1 cstackBANK0 dist/default/debug\PID_BUCK.X.debug.o
+__size_of_PWM 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of_abs 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of_pad 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__initialization 2864 0 CODE 0 cinit dist/default/debug\PID_BUCK.X.debug.o
+___xxtofl@sign 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__pbssBANK0 BE 0 BANK0 1 bssBANK0 dist/default/debug\PID_BUCK.X.debug.o
+_LCD_Command 2848 0 CODE 0 text24 dist/default/debug\PID_BUCK.X.debug.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug\PID_BUCK.X.debug.o
+__Hsmallconst 806 0 SMALLCONST 0 smallconst dist/default/debug\PID_BUCK.X.debug.o
+dtoa@d 1E 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+dtoa@i 3E 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+dtoa@n 36 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+dtoa@p 30 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+dtoa@s 34 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+dtoa@w 32 0 COMRAM 1 cstackCOMRAM dist/default/debug\PID_BUCK.X.debug.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug\PID_BUCK.X.debug.o
+__size_of_LCD_Char 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__size_of_LCD_Init 0 0 ABS 0 - dist/default/debug\PID_BUCK.X.debug.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\PID_BUCK.X.debug.o
+__Hintcode 0 0 CODE 0 intcode dist/default/debug\PID_BUCK.X.debug.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+text16 0 806 806 208E 1
+cstackCOMRAM 1 1 1 5F 1
+cstackBANK0 1 60 60 86 1
+reset_vec 0 0 0 4 1
+smallconst 0 800 800 6 1
+config 0 300000 300000 E 1
+# OTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by OTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
