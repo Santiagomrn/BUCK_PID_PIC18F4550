@@ -127,31 +127,31 @@
 "132 C:\Users\santi\Google Drive\7sem\sistemas embebidos\PIC\PID_BUCK.X\main_PID_BUCK.c
 [v _main main `(v  1 e 1 0 ]
 {
-"144
-[v main@Error Error `f  1 a 4 50 ]
-"146
-[v main@Integral Integral `f  1 a 4 44 ]
-"148
-[v main@T T `f  1 a 4 40 ]
 "149
+[v main@Error Error `f  1 a 4 50 ]
+"151
+[v main@Integral Integral `f  1 a 4 44 ]
+"153
+[v main@T T `f  1 a 4 40 ]
+"154
 [v main@Error_0 Error_0 `f  1 a 4 34 ]
-"147
+"152
 [v main@Derivativo Derivativo `f  1 a 4 30 ]
-"145
-[v main@Proporcional Proporcional `f  1 a 4 26 ]
-"140
-[v main@Kd Kd `f  1 a 4 12 ]
-"139
-[v main@Ki Ki `f  1 a 4 8 ]
-"138
-[v main@Kp Kp `f  1 a 4 4 ]
 "150
-[v main@Control Control `i  1 a 2 48 ]
-"142
-[v main@input input `i  1 a 2 38 ]
+[v main@Proporcional Proporcional `f  1 a 4 26 ]
 "143
+[v main@Kd Kd `f  1 a 4 12 ]
+"142
+[v main@Ki Ki `f  1 a 4 8 ]
+"141
+[v main@Kp Kp `f  1 a 4 4 ]
+"155
+[v main@Control Control `i  1 a 2 48 ]
+"147
+[v main@input input `i  1 a 2 38 ]
+"148
 [v main@offset offset `i  1 a 2 24 ]
-"178
+"181
 } 0
 "82
 [v _timer_ms timer_ms `(v  1 e 1 0 ]

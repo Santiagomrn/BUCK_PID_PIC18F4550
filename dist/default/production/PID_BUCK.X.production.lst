@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Sat Jul 04 11:02:27 2020
+                                                                                               Sat Jul 04 18:19:21 2020
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
      1                           	processor	18F4550
@@ -482,11 +482,11 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    468  0070FE  6F8F               	movwf	(main@Integral+3)& (0+255),b
    469  007100                     
    470                           ; BSR set to: 0
-   471  007100  0E1B               	movlw	27
+   471  007100  0E96               	movlw	150
    472  007102  6F88               	movwf	main@T& (0+255),b
-   473  007104  0E2F               	movlw	47
+   473  007104  0E43               	movlw	67
    474  007106  6F89               	movwf	(main@T+1)& (0+255),b
-   475  007108  0E5D               	movlw	93
+   475  007108  0E0B               	movlw	11
    476  00710A  6F8A               	movwf	(main@T+2)& (0+255),b
    477  00710C  0E3D               	movlw	61
    478  00710E  6F8B               	movwf	(main@T+3)& (0+255),b
@@ -674,7 +674,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    660  007364  EC7B  F036         	call	_PWM	;wreg free
    661  007368  0E00               	movlw	0
    662  00736A  6E02               	movwf	(timer_ms@n+1)^0,c
-   663  00736C  0E32               	movlw	50
+   663  00736C  0E1E               	movlw	30
    664  00736E  6E01               	movwf	timer_ms@n^0,c
    665  007370  EC57  F036         	call	_timer_ms	;wreg free
    666  007374  EF96  F038         	goto	l2038
@@ -717,13 +717,12 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    703  006CAE                     _timer_ms:
    704                           	opt callstack 30
    705  006CAE                     
-   706                           ;main_PID_BUCK.c: 82:         Error = offset - input;;main_PID_BUCK.c: 83:         Propo
-      +                          rcional = Error * Kp;;main_PID_BUCK.c: 84:         Integral = Integral + Error * Ki * T;
-      +                          ;main_PID_BUCK.c: 85:         Derivativo = (Error - Error_0) * Kd / T;
+   706                           ;main_PID_BUCK.c: 82: ;main_PID_BUCK.c: 83:     while(1){;main_PID_BUCK.c: 84: ;main_PID
+      +                          _BUCK.c: 85:         input=ADC_Read(0);
    707  006CAE  0E82               	movlw	130
    708  006CB0  6ED5               	movwf	213,c	;volatile
    709                           
-   710                           ;main_PID_BUCK.c: 86:         Error_0 = Error;
+   710                           ;main_PID_BUCK.c: 86: 
    711  006CB2  0E00               	movlw	0
    712  006CB4  6E04               	movwf	(timer_ms@i+1)^0,c
    713  006CB6  0E00               	movlw	0
@@ -731,7 +730,8 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    715  006CBA  EF6D  F036         	goto	l1612
    716  006CBE                     l1608:
    717                           
-   718                           ;main_PID_BUCK.c: 87: ;main_PID_BUCK.c: 88: 
+   718                           ;main_PID_BUCK.c: 87:         Error = offset - input;;main_PID_BUCK.c: 88:         Propo
+      +                          rcional = Error * Kp;
    719  006CBE  0EFA               	movlw	250
    720  006CC0  6ED7               	movwf	215,c	;volatile
    721  006CC2  0E23               	movlw	35
@@ -744,10 +744,10 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    728  006CD0  EF63  F036         	goto	l45
    729  006CD4                     u1480:
    730  006CD4                     
-   731                           ;main_PID_BUCK.c: 90: 
+   731                           ;main_PID_BUCK.c: 90:         Derivativo = (Error - Error_0) * Kd / T;
    732  006CD4  94F2               	bcf	4082,2,c	;volatile
    733  006CD6                     
-   734                           ;main_PID_BUCK.c: 91:         Control =(int)(Proporcional + Integral + Derivativo);
+   734                           ;main_PID_BUCK.c: 91:         Error_0 = Error;
    735  006CD6  4A03               	infsnz	timer_ms@i^0,f,c
    736  006CD8  2A04               	incf	(timer_ms@i+1)^0,f,c
    737  006CDA                     l1612:
@@ -2952,7 +2952,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   2936  006D50                     _ADC_Read:
   2937                           	opt callstack 30
   2938  006D50                     
-  2939                           ;main_PID_BUCK.c: 102: }
+  2939                           ;main_PID_BUCK.c: 102: ;main_PID_BUCK.c: 103:     };main_PID_BUCK.c: 104: 
   2940  006D50  C001  F003         	movff	ADC_Read@channel,??_ADC_Read
   2941  006D54  90D8               	bcf	status,0,c
   2942  006D56  3603               	rlcf	??_ADC_Read^0,f,c
@@ -3070,22 +3070,22 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   3054  006C54                     _ADC_Init:
   3055                           	opt callstack 30
   3056  006C54                     
-  3057                           ;main_PID_BUCK.c: 96:         PWM(Control);
+  3057                           ;main_PID_BUCK.c: 96:         if(Control>120){
   3058  006C54  6892               	setf	146,c	;volatile
   3059  006C56                     
-  3060                           ;main_PID_BUCK.c: 97:         timer_ms(50);
+  3060                           ;main_PID_BUCK.c: 97:             Control=120;
   3061  006C56  0E0E               	movlw	14
   3062  006C58  6EC1               	movwf	193,c	;volatile
   3063                           
-  3064                           ;main_PID_BUCK.c: 98: 
+  3064                           ;main_PID_BUCK.c: 98:         }
   3065  006C5A  0E92               	movlw	146
   3066  006C5C  6EC0               	movwf	192,c	;volatile
   3067                           
-  3068                           ;main_PID_BUCK.c: 99: 
+  3068                           ;main_PID_BUCK.c: 99:         PWM(Control);
   3069  006C5E  0E00               	movlw	0
   3070  006C60  6EC4               	movwf	196,c	;volatile
   3071                           
-  3072                           ;main_PID_BUCK.c: 100:     }
+  3072                           ;main_PID_BUCK.c: 100:         timer_ms(30);
   3073  006C62  0E00               	movlw	0
   3074  006C64  6EC3               	movwf	195,c	;volatile
   3075  006C66  0012               	return		;funcret
@@ -3310,7 +3310,7 @@ SFR                  0      0       0     200        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Sat Jul 04 11:02:27 2020
+Symbol Table                                                                                   Sat Jul 04 18:19:21 2020
 
            ___fldiv@aexp 004A             ___fldiv@bexp 0049             ___fldiv@sign 0042  
             main@Control 0090                       l52 6C66                       l61 6D4E  

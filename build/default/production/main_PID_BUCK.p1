@@ -709,72 +709,72 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main_PID_BUCK.c: 60: 
 [p x WRT3 = OFF ]
 "63
-[; ;main_PID_BUCK.c: 63:     float Ki=0.7;
+[; ;main_PID_BUCK.c: 63: 
 [p x WRTC = OFF ]
 "64
-[; ;main_PID_BUCK.c: 64:     float Kd=.00006;
+[; ;main_PID_BUCK.c: 64: 
 [p x WRTB = OFF ]
 "65
-[; ;main_PID_BUCK.c: 65: 
+[; ;main_PID_BUCK.c: 65:     float Kp=.02;
 [p x WRTD = OFF ]
 "68
-[; ;main_PID_BUCK.c: 68:     float Error =0;
+[; ;main_PID_BUCK.c: 68: 
 [p x EBTR0 = OFF ]
 "69
-[; ;main_PID_BUCK.c: 69:     float Proporcional =0;
+[; ;main_PID_BUCK.c: 69: 
 [p x EBTR1 = OFF ]
 "70
-[; ;main_PID_BUCK.c: 70:     float Integral=0;
+[; ;main_PID_BUCK.c: 70: 
 [p x EBTR2 = OFF ]
 "71
-[; ;main_PID_BUCK.c: 71:     float Derivativo=0;
+[; ;main_PID_BUCK.c: 71:     int input=0;
 [p x EBTR3 = OFF ]
 "74
-[; ;main_PID_BUCK.c: 74:     int Control=0;
+[; ;main_PID_BUCK.c: 74:     float Proporcional =0;
 [p x EBTRB = OFF ]
 "82
-[; ;main_PID_BUCK.c: 82:         Error = offset - input;
+[; ;main_PID_BUCK.c: 82: 
 [v _timer_ms `(v ~T0 @X0 1 ef1`ui ]
 "83
-[; ;main_PID_BUCK.c: 83:         Proporcional = Error * Kp;
+[; ;main_PID_BUCK.c: 83:     while(1){
 {
 [e :U _timer_ms ]
 "82
-[; ;main_PID_BUCK.c: 82:         Error = offset - input;
+[; ;main_PID_BUCK.c: 82: 
 [v _n `ui ~T0 @X0 1 r1 ]
 "83
-[; ;main_PID_BUCK.c: 83:         Proporcional = Error * Kp;
+[; ;main_PID_BUCK.c: 83:     while(1){
 [f ]
 "84
-[; ;main_PID_BUCK.c: 84:         Integral = Integral + Error * Ki * T;
+[; ;main_PID_BUCK.c: 84: 
 [v _i `ui ~T0 @X0 1 a ]
 "85
-[; ;main_PID_BUCK.c: 85:         Derivativo = (Error - Error_0) * Kd / T;
+[; ;main_PID_BUCK.c: 85:         input=ADC_Read(0);
 [e = _T0CON -> -> 130 `i `uc ]
 "86
-[; ;main_PID_BUCK.c: 86:         Error_0 = Error;
+[; ;main_PID_BUCK.c: 86: 
 {
 [e = _i -> -> 0 `i `ui ]
 [e $U 374  ]
 [e :U 371 ]
 "87
-[; ;main_PID_BUCK.c: 87: 
+[; ;main_PID_BUCK.c: 87:         Error = offset - input;
 {
 "88
-[; ;main_PID_BUCK.c: 88: 
+[; ;main_PID_BUCK.c: 88:         Proporcional = Error * Kp;
 [e = _TMR0 -> - -> -> 65535 `l `ul / -> 48000000 `ul -> -> * * -> 4 `i -> 8 `i -> 1000 `i `l `ul `us ]
 "89
-[; ;main_PID_BUCK.c: 89: 
+[; ;main_PID_BUCK.c: 89:         Integral = Integral + Error * Ki * T;
 [e $U 375  ]
 [e :U 376 ]
 [e :U 375 ]
 [e $ ! _TMR0IF 376  ]
 [e :U 377 ]
 "90
-[; ;main_PID_BUCK.c: 90: 
+[; ;main_PID_BUCK.c: 90:         Derivativo = (Error - Error_0) * Kd / T;
 [e = _TMR0IF -> -> 0 `i `b ]
 "91
-[; ;main_PID_BUCK.c: 91:         Control =(int)(Proporcional + Integral + Derivativo);
+[; ;main_PID_BUCK.c: 91:         Error_0 = Error;
 }
 [e ++ _i -> -> 1 `i `ui ]
 [e :U 374 ]
@@ -785,48 +785,51 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main_PID_BUCK.c: 92: 
 [e = _T0CON -> -> 0 `i `uc ]
 "93
-[; ;main_PID_BUCK.c: 93:         if(Control>120){
+[; ;main_PID_BUCK.c: 93: 
 [e :UE 370 ]
 }
 "94
-[; ;main_PID_BUCK.c: 94:             Control=120;
+[; ;main_PID_BUCK.c: 94:         Control =(int)(Proporcional + Integral + Derivativo);
 [v _ADC_Init `(v ~T0 @X0 1 ef ]
 "95
-[; ;main_PID_BUCK.c: 95:         }
+[; ;main_PID_BUCK.c: 95: 
 {
 [e :U _ADC_Init ]
 [f ]
 "96
-[; ;main_PID_BUCK.c: 96:         PWM(Control);
+[; ;main_PID_BUCK.c: 96:         if(Control>120){
 [e = _TRISA -> -> 255 `i `uc ]
 "97
-[; ;main_PID_BUCK.c: 97:         timer_ms(50);
+[; ;main_PID_BUCK.c: 97:             Control=120;
 [e = _ADCON1 -> -> 14 `i `uc ]
 "98
-[; ;main_PID_BUCK.c: 98: 
+[; ;main_PID_BUCK.c: 98:         }
 [e = _ADCON2 -> -> 146 `i `uc ]
 "99
-[; ;main_PID_BUCK.c: 99: 
+[; ;main_PID_BUCK.c: 99:         PWM(Control);
 [e = _ADRESH -> -> 0 `i `uc ]
 "100
-[; ;main_PID_BUCK.c: 100:     }
+[; ;main_PID_BUCK.c: 100:         timer_ms(30);
 [e = _ADRESL -> -> 0 `i `uc ]
 "101
 [; ;main_PID_BUCK.c: 101: 
 [e :UE 378 ]
 }
 "102
-[; ;main_PID_BUCK.c: 102: }
+[; ;main_PID_BUCK.c: 102: 
 [v _ADC_Read `(i ~T0 @X0 1 ef1`i ]
 "103
+[; ;main_PID_BUCK.c: 103:     }
 {
 [e :U _ADC_Read ]
 "102
-[; ;main_PID_BUCK.c: 102: }
+[; ;main_PID_BUCK.c: 102: 
 [v _channel `i ~T0 @X0 1 r1 ]
 "103
+[; ;main_PID_BUCK.c: 103:     }
 [f ]
 "104
+[; ;main_PID_BUCK.c: 104: 
 [v _digital `i ~T0 @X0 1 a ]
 "107
 [e = _ADCON0 -> | & -> _ADCON0 `i -> 195 `i & << _channel -> 2 `i -> 60 `i `uc ]
@@ -884,81 +887,81 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "134
 [e ( _ADC_Init ..  ]
-"138
+"141
 [v _Kp `f ~T0 @X0 1 a ]
 [e = _Kp -> .0.02 `f ]
-"139
+"142
 [v _Ki `f ~T0 @X0 1 a ]
 [e = _Ki -> .0.7 `f ]
-"140
+"143
 [v _Kd `f ~T0 @X0 1 a ]
 [e = _Kd -> .0.00006 `f ]
-"142
+"147
 [v _input `i ~T0 @X0 1 a ]
 [e = _input -> 0 `i ]
-"143
+"148
 [v _offset `i ~T0 @X0 1 a ]
 [e = _offset -> 512 `i ]
-"144
+"149
 [v _Error `f ~T0 @X0 1 a ]
 [e = _Error -> -> 0 `i `f ]
-"145
+"150
 [v _Proporcional `f ~T0 @X0 1 a ]
 [e = _Proporcional -> -> 0 `i `f ]
-"146
+"151
 [v _Integral `f ~T0 @X0 1 a ]
 [e = _Integral -> -> 0 `i `f ]
-"147
+"152
 [v _Derivativo `f ~T0 @X0 1 a ]
 [e = _Derivativo -> -> 0 `i `f ]
-"148
+"153
 [v _T `f ~T0 @X0 1 a ]
-[e = _T -> .0.054 `f ]
-"149
+[e = _T -> .0.034 `f ]
+"154
 [v _Error_0 `f ~T0 @X0 1 a ]
 [e = _Error_0 -> -> 0 `i `f ]
-"150
+"155
 [v _Control `i ~T0 @X0 1 a ]
 [e = _Control -> 0 `i ]
-"151
+"156
 [v _MaxIntegralError `f ~T0 @X0 1 a ]
 [e = _MaxIntegralError -> -> 120 `i `f ]
-"152
+"157
 [e ( _PWM (1 -> 0 `i ]
-"154
+"159
 [e :U 386 ]
 {
-"156
-[e = _input ( _ADC_Read (1 -> 0 `i ]
-"158
-[e = _Error -> - _offset _input `f ]
-"159
-[e = _Proporcional * _Error _Kp ]
-"160
-[e = _Integral + _Integral * * _Error _Ki _T ]
 "161
+[e = _input ( _ADC_Read (1 -> 0 `i ]
+"163
+[e = _Error -> - _offset _input `f ]
+"164
+[e = _Proporcional * _Error _Kp ]
+"165
+[e = _Integral + _Integral * * _Error _Ki _T ]
+"166
 [e = _Derivativo / * - _Error _Error_0 _Kd _T ]
-"162
-[e = _Error_0 _Error ]
 "167
+[e = _Error_0 _Error ]
+"170
 [e = _Control -> + + _Proporcional _Integral _Derivativo `i ]
-"169
+"172
 [e $ ! > _Control -> 120 `i 388  ]
 {
-"170
+"173
 [e = _Control -> 120 `i ]
-"171
+"174
 }
 [e :U 388 ]
-"172
+"175
 [e ( _PWM (1 _Control ]
-"173
-[e ( _timer_ms (1 -> -> 50 `i `ui ]
 "176
+[e ( _timer_ms (1 -> -> 30 `i `ui ]
+"179
 }
 [e :U 385 ]
 [e $U 386  ]
 [e :U 387 ]
-"178
+"181
 [e :UE 384 ]
 }

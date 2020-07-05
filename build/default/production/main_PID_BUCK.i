@@ -5951,9 +5951,14 @@ void main()
 
 
 
+
+
+
     float Kp=.02;
     float Ki=0.7;
     float Kd=.00006;
+
+
 
     int input=0;
     int offset=512;
@@ -5961,7 +5966,7 @@ void main()
     float Proporcional =0;
     float Integral=0;
     float Derivativo=0;
-    float T=0.054;
+    float T=0.034;
     float Error_0=0;
     int Control=0;
     float MaxIntegralError=120;
@@ -5978,15 +5983,13 @@ void main()
         Error_0 = Error;
 
 
-
-
         Control =(int)(Proporcional + Integral + Derivativo);
 
         if(Control>120){
             Control=120;
         }
         PWM(Control);
-        timer_ms(50);
+        timer_ms(30);
 
 
     }

@@ -1,8 +1,5 @@
 /*
  * File:   main_PID_BUCK.c
- * Author: santi
- *
- * Created on 26 de junio de 2020, 08:49 AM
  */
 #include <xc.h>
 #include <stdio.h>
@@ -97,7 +94,7 @@ void ADC_Init()
     ADCON1 = 0x0E;	/* Ref vtg is VDD and Configure pin as analog pin */
     ADCON2 = 0x92;	/* Left Justified, 4Tad and Fosc/32. */
     ADRESH=0;		/* Flush ADC output Register */
-    ADRESL=0;   
+    ADRESL=0;       /* Flush ADC output Register */
 } 
 int ADC_Read(int channel)
 {
@@ -122,7 +119,7 @@ void PWM(int output){
     TRISC2 = 0;		/* Set CCP1 pin as output for PWM out */
     PR2 = 29;		/* Load period value */
     CCPR1L = (output>>2);	/* load duty cycle value */
-    output=((output<<4)&0x0030)|0B00001100;
+    output=((output<<4)&0x0030)|0B00001100; 
     CCP1CON = output;	/* Set PWM mode and no decimal for PWM bit4 y 5 are of the duty cicle low bits */
     T2CON = 0B00000111;		/*pre-scalar 1:16, timer2 is off */
     TMR2 = 0;		/* Clear Timer2 initially */
@@ -131,7 +128,7 @@ void PWM(int output){
 
 void main()
 {
-    ADC_Init();
+    ADC_Init(); // Inicializar el ADC
     //PID
     
    
@@ -155,16 +152,15 @@ void main()
         
         input=ADC_Read(0);//lee el valor del ADC EN EL PUERTO ZERO
         
-        Error = offset - input;
-        Proporcional = Error * Kp;
-        Integral = Integral + Error * Ki * T;
-        Derivativo = (Error - Error_0) * Kd / T;
-        Error_0 = Error;
+        Error = offset - input;                 // Variable que guarda el error 
+        Proporcional = Error * Kp;                 // Constante proporcional
+        Integral = Integral + Error * Ki * T;       // Constante Integral
+        Derivativo = (Error - Error_0) * Kd / T;    // Constante Derivativa
+        Error_0 = Error;                            // Error
 
-      
         Control =(int)(Proporcional + Integral + Derivativo);
-       
-        if(Control>120){
+
+        if(Control>120){   
             Control=120;
         }
         PWM(Control);
